@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.main {
+  width: 60vw;
+  margin: auto;
+}
+
+.heading {
+  color: #6e046e;
+  text-align: center;
+  font-size: 2.7rem;
+}
