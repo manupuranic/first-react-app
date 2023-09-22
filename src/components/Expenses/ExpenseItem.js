@@ -14,7 +14,7 @@ const ExpenseItem = (props) => {
   };
 
   const incrementAmount = () => {
-    setAmount(amount + 100);
+    setAmount(+amount + 100);
   };
 
   const deleteHandler = () => {
@@ -24,9 +24,9 @@ const ExpenseItem = (props) => {
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
-      <ExpenseDetails title={title} amount={amount} location={props.location} />
-      <button onClick={changeTitleHandler}>Change Title</button>
-      <button onClick={deleteHandler}>Delete</button>
+      <ExpenseDetails title={title} amount={amount} />
+      {/* <button onClick={changeTitleHandler}>Change Title</button> */}
+      {/* <button onClick={deleteHandler}>Delete</button> */}
       <button onClick={incrementAmount}>Increment By 100</button>
     </Card>
   );
